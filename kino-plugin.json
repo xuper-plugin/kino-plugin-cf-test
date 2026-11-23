@@ -1,7 +1,7 @@
 {
   "id": "cf-test",
   "name": "CF Test",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "apiVersion": 20,
   "entry": "plugin.js",
   "icon": "icon.png",
