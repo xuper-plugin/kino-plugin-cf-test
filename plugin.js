@@ -12,6 +12,11 @@
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36";
 const CF_RE = /Just a moment|cf-chl|challenge-platform|cf_clearance|Checking your browser|__cf_chl/i;
 
+// Required alongside the "resolve" capability. Not used (the screen drives go.play directly).
+export async function search(query) {
+  return [];
+}
+
 export async function resolve(ref) {
   const url = String(ref == null ? "" : ref).trim();
   if (!/^https?:\/\//i.test(url)) throw kino.error("bad_request", "no url", { userMessage: "URL http(s) inválida" });

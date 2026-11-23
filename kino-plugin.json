@@ -1,7 +1,7 @@
 {
   "id": "cf-test",
   "name": "CF Test",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "apiVersion": 20,
   "entry": "plugin.js",
   "icon": "icon.png",
@@ -10,8 +10,9 @@
   "homepage": "https://github.com/xuper-plugin/kino-plugin-cf-test",
   "hosts": [],
   "fetchHosts": "any",
+  "streamHosts": "any",
   "browser": "pages",
-  "capabilities": ["resolve", "screen"],
+  "capabilities": ["search", "resolve", "screen"],
   "screen": {
     "label": "CF Test",
     "labelEn": "CF Test",
@@ -19,6 +20,9 @@
     "menuOpens": "screen",
     "opensFrom": ["menu"]
   },
+  "settings": [
+    { "key": "url", "type": "url", "label": "URL (opcional)", "labelEn": "URL (optional)", "hint": "Opcional; la pantalla ya pide una URL.", "hintEn": "Optional; the screen already asks for a URL." }
+  ],
   "recommends": ["xuper-plugin/kino-plugin-kino-resolver"],
   "consumes": {
     "resolver": {
